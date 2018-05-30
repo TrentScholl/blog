@@ -25,7 +25,9 @@ jobs:
 #          name: "Test Website"
 #          command: htmlproofer public --allow-hash-href --check-html --empty-alt-ignore --disable-external
       - persist_to_workspace:
-          root: public
+          root: ~/hugo
+          paths:
+            - public
 
   deploy:
     docker:
