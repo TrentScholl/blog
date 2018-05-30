@@ -35,4 +35,4 @@ jobs:
     steps:
       - attach_workspace:
           at: hugo
-      - run: s3cmd sync hugo/public s3://$S3_BUCKET_NAME --acl-public --delete-removed --guess-mime-type --no-mime-magic --no-preserve --cf-invalidate
+      - run: s3cmd sync hugo/public/ s3://$S3_BUCKET_NAME --acl-public --delete-removed --guess-mime-type --no-mime-magic --no-preserve --cf-invalidate
