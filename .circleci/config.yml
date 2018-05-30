@@ -15,18 +15,19 @@ jobs:
   build:
     docker:
       - image: cibuilds/hugo:0.41
+    working_directory: ~/hugo
+    environment:
+      HUGO_BUILD_DIR: ~/hugo/public
     steps:
       - checkout
       - run:
           name: "Build Website With Hugo"
-          command: HUGO_ENV=production hugo -v
+          command: HUGO_ENV=production hugo -v -d $HUGO_BUILD_DIR
 #      - run:
 #          name: "Test Website"
 #          command: htmlproofer public --allow-hash-href --check-html --empty-alt-ignore --disable-external
       - persist_to_workspace:
-          root: ~/
-          paths:
-            - public
+          root: $HUGO_BUILD_DIR
 
   deploy:
     docker:
@@ -34,4 +35,4 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/
-      - run: s3cmd sync ~/public/ s3://$S3_BUCKET_NAME --acl-public --delete-removed --guess-mime-type --no-mime-magic --no-preserve --cf-invalidate
+      - run: s3cmd sync ~/ s3://$S3_BUCKET_NAME --acl-public --delete-removed --guess-mime-type --no-mime-magic --no-preserve --cf-invalidate
