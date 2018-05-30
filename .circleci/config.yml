@@ -21,9 +21,9 @@ jobs:
       - run:
           name: "Build Website With Hugo"
           command: HUGO_ENV=production hugo -v
-#      - run:
-#          name: "Test Website"
-#          command: htmlproofer public --allow-hash-href --check-html --empty-alt-ignore --disable-external
+      - run:
+          name: "Test Website"
+          command: htmlproofer public --allow-hash-href --check-html --assume-extension --empty-alt-ignore --disable-external
       - persist_to_workspace:
           root: ~/hugo
           paths:
