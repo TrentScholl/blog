@@ -73,7 +73,6 @@ uglyurls = true
 
 # don't change anything here
 [taxonomies]
-  author   = "author"
   tag      = "tags"
   category = "categories"
 
