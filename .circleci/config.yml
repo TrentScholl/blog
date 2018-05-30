@@ -34,5 +34,5 @@ jobs:
       - image: garland/docker-s3cmd
     steps:
       - attach_workspace:
-          at: ~/
-      - run: s3cmd sync ~/ s3://$S3_BUCKET_NAME --acl-public --delete-removed --guess-mime-type --no-mime-magic --no-preserve --cf-invalidate
+          at: hugo
+      - run: s3cmd sync hugo/public s3://$S3_BUCKET_NAME --acl-public --delete-removed --guess-mime-type --no-mime-magic --no-preserve --cf-invalidate
