@@ -1,0 +1,86 @@
+title = "Trent Scholl"
+baseURL = "https://trentscholl.com"
+theme = "bilberry-hugo-theme"
+
+enableRobotsTXT = true
+
+disableHugoGeneratorInject = true
+
+# Change to your content language. Supported values: en, de, es, fr, ru
+DefaultContentLanguage = "en"
+
+# Enable / Disable Google Analytics statistics for your site
+googleAnalytics = "UA-119884360-1"
+
+# Enable / Disable comments on the articles via Disqus.
+disqusShortname = "trentscholl"
+
+uglyurls = true
+
+[params]
+  # Favicon for the browser's favorites and tabs
+  favicon = "" # set a favicon icon
+
+  # Custom CSS / JS modules that will be imported by the template.
+  # Files are relative to the static/ directory or a URL.
+  # Files are imported in the order they appear here, after
+  # theme.css and theme.js, respectively.
+  css_modules = []
+  js_modules = []
+
+  # Description and meta data for the search engines
+  author = "Trent Scholl"
+  description = "Personal home page of Trent Scholl"
+  keywords = "blog,personal"
+
+  # How many articles should be displayed at once?
+  paginate = 7
+
+  # Enable / Disable MathJax
+  enable_mathjax    = false
+
+  # Enable / Disable algolia search
+  algolia_search    = true
+  algolia_appId     = "8ZWLS6VMJ9"
+  algolia_apiKey    = "9a4294904c2943d4f9c44173a7d292f2"
+  algolia_indexName = "prod_TRENTSCHOLL"
+
+  # Header configuration
+    # your subtitle if you want to use any
+    subtitle = "Technology leader, DevOps evangelist, Automation enthusiast"
+
+    # if you want to use gravatar for the header image
+    gravatarEMail = "me@trentscholl.com"
+
+    # set an path to the image file you want to use | overwrites gravatar
+    customImage = ""
+
+    # always display the top navigation (with pages and search) on non-mobile screens
+    permanentTopNav = true
+
+  # social media profile urls for the footer links
+  facebook   = ""
+  twitter    = "https://twitter.com/TrentScholl"
+  googleplus = ""
+  pinterest  = ""
+  instagram  = ""
+  tumblr     = ""
+  youtube    = ""
+  vimeo      = ""
+  github     = "https://github.com/TrentScholl"
+  xing       = ""
+  linkedin   = "https://linkedin.com/in/trentscholl/"
+
+# don't change anything here
+[taxonomies]
+  author   = "author"
+  tag      = "tags"
+  category = "categories"
+
+[outputs]
+  home = [ "HTML", "JSON" ]
+  page = [ "HTML" ]
+
+[blackfriday]
+   plainIDAnchors = true
+   hrefTargetBlank = true

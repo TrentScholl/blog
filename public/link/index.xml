@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Links on Trent Scholl</title>
+    <link>https://trentscholl.com/link.html</link>
+    <description>Recent content in Links on Trent Scholl</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 28 May 2018 21:42:00 +1000</lastBuildDate>
+    
+	<atom:link href="https://trentscholl.com/link/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Node-RED</title>
+      <link>https://trentscholl.com/link/node-red.html</link>
+      <pubDate>Mon, 28 May 2018 21:42:00 +1000</pubDate>
+      
+      <guid>https://trentscholl.com/link/node-red.html</guid>
+      <description>A programming tool for wiring together hardware devices, APIs and online services in new and interesting ways.</description>
+    </item>
+    
+    <item>
+      <title>Home Assistant</title>
+      <link>https://trentscholl.com/link/home-assistant.html</link>
+      <pubDate>Mon, 28 May 2018 21:35:27 +1000</pubDate>
+      
+      <guid>https://trentscholl.com/link/home-assistant.html</guid>
+      <description>An open-source home automation platform running on Python 3.</description>
+    </item>
+    
+  </channel>
+</rss>

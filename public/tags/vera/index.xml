@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vera on Trent Scholl</title>
+    <link>https://trentscholl.com/tags/vera.html</link>
+    <description>Recent content in Vera on Trent Scholl</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 25 May 2018 13:27:00 +1000</lastBuildDate>
+    
+	<atom:link href="https://trentscholl.com/tags/vera/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Building a Smart Home</title>
+      <link>https://trentscholl.com/article/2018/05/25/building-a-smart-home/</link>
+      <pubDate>Fri, 25 May 2018 13:27:00 +1000</pubDate>
+      
+      <guid>https://trentscholl.com/article/2018/05/25/building-a-smart-home/</guid>
+      <description>&lt;p&gt;This post is going to a series of blog posts about my on-going Home Automation
+project.&lt;/p&gt;
+
+&lt;p&gt;For as long as I can remember I&amp;rsquo;ve always wanted to solve repeatable, manual
+steps with some kind of automation. So when I bought my own house, naturally the
+first thing I had to do was automate everything!&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

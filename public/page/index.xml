@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on Trent Scholl</title>
+    <link>https://trentscholl.com/page.html</link>
+    <description>Recent content in Pages on Trent Scholl</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 25 May 2018 18:42:00 +1000</lastBuildDate>
+    
+	<atom:link href="https://trentscholl.com/page/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>https://trentscholl.com/page/about.html</link>
+      <pubDate>Fri, 25 May 2018 18:42:00 +1000</pubDate>
+      
+      <guid>https://trentscholl.com/page/about.html</guid>
+      <description>I&amp;rsquo;m a determined, committed and a highly skilled IT Professional with over ten years experience in the IT industry including Systems Administration, Software Development, managing and leading IT strategy and teams.
+As a technology leader, I&amp;rsquo;ve helmed IT strategy and operations improvements; driving impeccable IT standards and practices. I have a Strong track record of providing outstanding stakeholder management, generating positive customer service experience and extraordinary organisational performance in a fiercely competitive scenario.</description>
+    </item>
+    
+  </channel>
+</rss>
