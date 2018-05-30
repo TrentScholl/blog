@@ -16,13 +16,11 @@ jobs:
     docker:
       - image: cibuilds/hugo:0.41
     working_directory: ~/hugo
-    environment:
-      HUGO_BUILD_DIR: ~/hugo/public
     steps:
       - checkout
       - run:
           name: "Build Website With Hugo"
-          command: HUGO_ENV=production hugo -v -d $HUGO_BUILD_DIR
+          command: HUGO_ENV=production hugo -v
 #      - run:
 #          name: "Test Website"
 #          command: htmlproofer public --allow-hash-href --check-html --empty-alt-ignore --disable-external
