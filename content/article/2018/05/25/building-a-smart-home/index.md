@@ -7,6 +7,7 @@ tags: ['Home Automation', 'Vera', 'Home Assistant']
 author: "Trent Scholl"
 
 featuredImage: "/images/feature.jpg"
+noSummary: false
 ---
 
 This post is going to a series of blog posts about my on-going Home Automation
