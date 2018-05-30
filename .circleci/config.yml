@@ -16,17 +16,15 @@ jobs:
             apk add --update python python-dev py-pip build-base
             pip install awscli
       - run: HUGO_ENV=production hugo -v -d $HUGO_BUILD_DIR
-      - run:
-        name: test our generated HTML files
-        command: |
-          htmlproofer $HUGO_BUILD_DIR --allow-hash-href --check-html \
-          --empty-alt-ignore --disable-external
+#      - run:
+#        name: test our generated HTML files
+#        command: |
+#          htmlproofer $HUGO_BUILD_DIR --allow-hash-href --check-html --empty-alt-ignore --disable-external
       - deploy:
           name: deploy to AWS
           command: |
             if [ "${CIRCLE_BRANCH}" = "master" ]; then
-              aws s3 sync $HUGO_BUILD_DIR s3://$S3_BUCKET_NAME --delete | awk '{print $2;}' | \
-              xargs aws cloudfront create-invalidation --distribution-id $CF_DISTRIBUTION_ID --paths
+              aws s3 sync $HUGO_BUILD_DIR s3://$S3_BUCKET_NAME --delete | awk '{print $2;}' | xargs aws cloudfront create-invalidation --distribution-id $CF_DISTRIBUTION_ID --paths
             else
               echo "Not master branch, dry run only"
             fi
