@@ -31,7 +31,7 @@ jobs:
 
   deploy:
     docker:
-      - image: garland/docker-s3cmd
+      - image: schickling/s3cmd
     steps:
       - attach_workspace:
           at: hugo
