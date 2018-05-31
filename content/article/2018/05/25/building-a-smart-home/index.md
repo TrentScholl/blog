@@ -32,7 +32,7 @@ hardware gateway that supports Z-Wave devices. It's relatively cheap and is a
 mature product that has native support for hundreds of devices. The development
 community is pretty active and it has a plugin architecture based on LUA.
 
-![VeraLite](veralite.jpg#center "VeraLite")
+![VeraLite](/images/building-a-smart-home/veralite.jpg#center "VeraLite")
 
 The VeraLite was easy to use and a great place to start for simple auomations.
 More complicated automations can be achieved with the help of the community
@@ -52,7 +52,7 @@ After evaluating the commercial hardware and software solutions, as well as the
 free open source software solutions, I settled on
 [Home Assistant](https://www.home-assistant.io/).
 
-![Home Assistant](homeassistant.png#center "Home Assistant")
+![Home Assistant](/images/building-a-smart-home/homeassistant.png#center "Home Assistant")
 
 > Home Assistant is an open-source home automation platform running on Python 3. Track and control all devices at home and automate control. Perfect to run on a Raspberry Pi.
 
